@@ -1,0 +1,342 @@
+/*--------------------
+      head part 
+-----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F3F1FF;
+}
+header{
+    background-color: #2D25A0;
+    color: #ffffff;
+    /* margin-bottom: 100px; */
+}
+/* ---------------
+     nav part
+-------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 100px;
+    margin-bottom: 30px;
+}
+.nav-left ul li{
+    display: inline;
+    margin-right: 20px;
+    font-weight: 500;
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-left ul li:hover{
+    background-color: rgb(214, 23, 23);
+}
+.nav-right{
+    background-color: #E02C6D;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+.nav-right img{
+    width: 24px;
+    margin-right: 10px;
+}
+/* -------------------
+    cover part
+--------------------- */
+.cover-section{
+    padding: 40px 100px;
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+}
+.cover-right{
+    width: 40%;
+    overflow: hidden;
+}
+.cover-section:hover .cover{
+    transform: scale(0.8) rotate(45deg);
+    transition: transform 4s ease-in-out;
+}
+.cover-left{
+    width: 40%;
+    margin-right: 120px;
+}
+.cover-left h2,.highlight-left h2{
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+.cover-left span, .highlight-left span{
+    background-color: #E02C6D;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.cover-left span a,.highlight-left span a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.cover-right img,.highlight-right img{
+    width: 550px;
+    border-radius: 5px;
+}
+
+/* ----------------------------------
+      Main styling
+----------------------------------- */
+main{
+    margin: 0 100px;
+}
+/* ----------------------------
+   Top players section
+---------------------------- */
+.player-section{
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 21px;
+    padding-left: 15px;
+}
+.player{
+    box-shadow: 10px 10px 40px silver;
+    width: 290px;
+    height: 420px;
+    padding: 20px;
+    /* background-color: aqua; */
+}
+.player img{
+   width: 300px;
+   border-radius: 5px;
+}
+.player h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* ----------------------------
+        highlight section
+--------------------------------*/
+.highlight-section{
+    margin-bottom: 100px;
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+    padding: 10px;
+}
+.highlight-left{
+    width: 40%;
+}
+.highlight-right{
+    width: 40%;
+    margin-left: 80px;
+}
+
+/*-------------------------- 
+    upcomming-fixture
+---------------------------*/
+.upcomming-fixture{
+    margin-bottom: 100px;
+    background: #ffffff;
+}
+.upcomming-fixture h2{
+    padding-top: 15px;
+}
+.upcomming-fixture img{
+    width: 300px;
+    border-radius: 5px;
+}
+.fixtures{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.fixture{
+    width: 290px;
+    height: 280px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px silver;
+}
+.middle{
+    justify-items: center;
+    padding-left: 70px;
+    color: green;
+    box-shadow: none;
+    /* padding-top: 50px; */
+}
+.middle h2{
+    color: red;
+}
+
+/* ---------------------------------------
+      registration-section
+----------------------------------------- */
+.registration-section{
+    margin-bottom: 150px;
+}
+form{
+    margin-left: 370px;
+}
+fieldset{
+    width: 50%;
+    padding-left: 5%;
+    border-color: green;
+}
+legend{
+    font-size: 40px;
+    color: rgb(11, 218, 11);
+}
+input{
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    border-color: #171733;
+    border-radius: 5px;
+    font-size: 18px;
+}
+button{
+    margin: 5px 0;
+    padding: 6px;
+    color: #fff;
+    font-size: 24px;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+/* ----------------------------
+    champion-section
+---------------------------- */
+ .champion-section{
+    margin-bottom: 150px;
+    align-items: center;
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-frame{
+    width: 500px;
+    height: 350px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+.photo-detail{
+    position: absolute;
+    width: 500px;
+    top: 0;
+    display: none;
+}
+.photo-detail h3{
+    background: #fff;
+    color: red;
+    text-align: center;
+}
+.photo-detail p{
+    color: #fff;
+    font-size: 18px;
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(104, 101, 94, 0.712);
+}
+.photo-frame:hover .photo{
+    transform: scale(1.3) rotate(45deg);
+    transition: transform 3s ease-in-out;
+}
+
+/* ---------------------
+   footer
+---------------------- */
+footer{
+    background-color: #ffffff;
+    text-align: center;
+}
+footer img{
+    width: 450px;
+}
+footer .fab{
+    width: 45px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-twitter{
+    color: #2D25A0;
+}
+.fa-instagram-square{
+    color: chocolate;
+}
+.fa-youtube{
+    color: red;
+}
+
+/* ----------------------------------
+     Media Querry
+-----------------------------------*/
+/* Mobile devices */
+@media only screen and (max-width: 668px) {
+    section,main{
+        width: 95%;
+    }
+    main{
+        margin: 0px 0px;
+    }
+    .top-players,.fixtures{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .registration-section,.highlight-right,.highlight-left p{
+        display: none;
+    }
+    .highlight-section{
+        margin-left: 30px;
+    }
+    .highlight-section,.cover-section{
+        display: block;
+    }
+    .highlight-right img{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .cover-left h2{
+        font-size: 30px;
+    }
+    .cover-right img{
+        margin-top: 20px;
+        width: 100%;
+    }
+    footer img{
+        width: 250px; 
+    }
+    
+}
